@@ -11,7 +11,7 @@ num2 = float(input("Enter the second number: "))
 
 # Step 3: Time to do some math! 🧠 Let's compute the sum, difference, product, and quotient.
 
-# Add the two numbers (Yay! Addition is the first step to fun!) ➕
+# Add the two numbers (Ya! Addition is the first step to fun!) ➕
 sum_result = num1 + num2
 
 # Subtract the second number from the first (Negative vibes, but necessary! 😜) ➖
