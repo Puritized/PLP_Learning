@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Web development using HTML5 Sematics">
+	<title>Enhanced Form Using Semantic Tags</title>
+	<link rel="icon" type="image/png" href="favicon.png">
+</head>
+
+<body>
+
+	<!-- Body of the content begins -->
+
+	<header>
+		<!-- Main page heading -->
+
+		<h1>Enhanced Form Using Semantic Tags</h1>
+
+		<!-- Responsive Navigation begins -->
+		<nav>
+			<a href="/">Home</a>
+			<a href="#list">Lists</a>
+			<a href="#table">Tables</a>
+			<a href="#media">Media</a>
+			<a href="#form">Form</a>
+		</nav>
+		<!-- Responsive Navigation ends -->
+
+	</header>
+
+	<!-- Main content begins here -->
+	<main>
+		<content id="main-content">
+
+			<!-- The List contents begin here -->
+			<section id="list">
+				<h2>This is The Lists Section</h2>
+
+				<h3>Lists of Frusts</h3>
+				<ul type="i">
+					<li>Orange</li>
+					<li>Mango</li>
+					<li>Guava</li>
+					<li>Pawpaw</li>
+					<li>Pineapple</li>
+				</ul>
+				<h3>List of 5 Top Car Brands</h3>
+				<ol type="1">
+					<li>Tesla</li>
+					<li>Toyota</li>
+					<li>M-Benz</li>
+					<li>Innoson</li>
+					<li>BMW</li>
+				</ol>
+				<h3>Sermon Outline</h3>
+				<dl>
+					<dt>What is Reconcilliation?</dt>
+						<dd>Meaning of Reconcilliation</dd>
+						<dd>The Greet word for Reconcilliation</dd>
+					<dt>Why Reconcilliation?</dt>
+						<dd>It is commanded</dd>
+						<dd>It brings unity and peace</dd>
+					<dt>How to Achieve Reconcilliation</dt>
+						<dd>Delibrate action</dd>
+						<dd>Act immediate and don't delay</dd>
+				</dl>
+				<h3>Food Menu</h3>
+				<ul type="square">
+					<li>Breakfast
+						<ul>
+							<li>Moimoi and Pap</li>
+							<li>Rice and Fried plantain</li>
+						</ul>
+					</li>
+					<li>Lunch
+						<ul>
+							<li>Eba and Egusi Soup</li>
+							<li>Beans Porridge</li>
+						</ul>
+					</li>
+					<li>Dinner
+						<ul>
+							<li>Bread and Tea</li>
+							<li>White and Pepper South</li>
+						</ul>
+					</li>
+				</ul>
+
+				<!-- The List contents end here -->
+			</section>
+
+			<section id="table">
+				<!-- The Table content begins here -->
+				
+				<h2>This is The Table Section</h2>
+
+				<h3>Normal Table with Caption</h3>
+				<table border="1" width="500">
+					<caption>4 x 4 Times Table</caption>
+					<thead>
+							<tr>
+								<th>1</th>
+								<th>2</th>
+								<th>3</th>
+								<th>4</th>
+							</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>2</td>
+							<td>4</td>
+							<td>6</td>
+							<td>8</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>6</td>
+							<td>9</td>
+							<td>12</td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td>8</td>
+							<td>12</td>
+							<td>16</td>
+						</tr>
+
+					</tbody>
+				</table>
+
+				<h3>Merged Table with Caption</h3>
+				<table border="1" width="500">
+					<caption>Rows and Columns Merged Table</caption>
+					<thead>
+							<tr>
+								<th>Cabohydrate</th>
+								<th>Vitamins and Minerals</th>
+								<th>Protein</th>
+							</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td rowspan="2">plantain</td>
+							<td>Salt</td>
+							<td>Beans</td>
+						</tr>
+						<tr>
+							<td>Fruit</td>
+							<td colspan="2">Fish</td>
+						</tr>
+						<tr>
+							<td>Yam</td>
+							<td rowspan="2">Egg and Butter</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<!-- The Table content ends here -->
+			</section>
+
+			<section id="media">
+				<!-- The Media content begins here -->
+
+				<h2>The Media Section</h2>
+
+				<h3>The Audio Media Content</h3>
+				<audio controls>
+					<source src="adio.mp3" type="audio/mp3">
+						Your device does not support audio format.
+				</audio>
+
+				<h3>The Video Media Content</h3>
+				<video controls>
+					<source src="video.mp4" type="video/mp4">
+						Your device does not support this video format.
+				</video>
+
+				<!-- The media content ends here -->
+			</section>
+
+			<section id="form">
+				<!-- The form content begins here -->
+				<h2>Inquery Form</h2>
+				<p>Send your inqueries to us using this form.</p>
+				<form action="/" method="post">
+					<label for="name">Full Name:</label>
+					<input type="text" name="fullname" minlength="10" maxlength="50" placeholder="Enter your full Name here" required>
+					<label for="email">Email:</label>
+					<input type="email" name="email" placeholder="Enter your email here" required>
+					<label for="Purpose">Purpose:</label>
+					<select>
+						<option value="" disabled selected>Choose One</option>
+						<option value="web-developmemt">Web Development</option>
+						<option value="App Development">App Development</option>
+						<option value="SEO">SEO</option>
+					</select>
+					<label for="message">Message:</label>
+					<textarea name="message" row="4" cols="50" placeholder="Enter your inqury here" required></textarea>
+					<input type="submit" value="Submit Now" name="submit">
+				</form>
+
+				<h2>Employee Form</h2>
+				<p>Kindly fill the form below.</p>
+				<form action="/" method="post" autocomplete="on">
+					<fieldset>
+						<legend>Person Information</legend>
+						<label for="fname">First Name:</label>
+						<input type="text" name="fname" placeholder="Enter your first Name here" required>
+
+						<label for="lname">Last Name:</label>
+						<input type="text" name="lname" placeholder="Enter your last Name here" required>
+
+						<label for="dob">Date of Birth:</label>
+						<input type="date" name="dob" placeholder="Enter your Date of Birth here" required>
+
+						<label for="email">Email:</label>
+						<input type="email" name="email" autocomplete="email" placeholder="Enter your email here" required>
+
+						<label for="zip">Zip Code:</label>
+						<input type="zip" name="zip" pattern="[0-9]{5}" placeholder="Enter your 5 digit zip code here" required>
+					</fieldset>
+					
+					<fieldset>
+						<legend>Educational Qualification</legend>
+						<label for="school">School Attended:</label>
+					<input type="text" name="school" autocomplete="university" placeholder="Enter your school here" required>
+
+					<label for="degree">Degree Obtained:</label>
+					<select>
+						<option value="" disabled selected>Choose Degree</option>
+						<option value="bachelor">Bachelor</option>
+						<option value="hnd">HND</option>
+						<option value="ond">OND</option>
+						<option value="ssce">SSCE</option>
+						<option value="leaving-cert">Leaving Certificate</option>
+					</select>
+
+					<label for="graduation">Date of Graduation:</label>
+					<input type="date" name="graduation" placeholder="Enter date of graduation" required>
+					</fieldset>
+					
+					<input type="submit" value="Submit Now" name="submit">
+				</form>
+				<!-- The form content ends here -->
+			</section>
+
+			<!-- These extra content to complete the layout -->
+			<article>
+				<h3>Our Blog Editorial</h3>
+				<p>Read the latest articles from the collection of our insightful blog resources</p>
+				<img src="placeholder.jpg" alt="blog post1">
+				<img src="placeholder.jpg" alt="blog post2">
+				<a href="blog.html">Read More</a>
+			</article>
+		</content>
+
+		<aside>
+			<!-- The sidebar content begins here -->
+			<h3>Latest Post</h3>
+			<ul>
+				<li><a href="">How to develop a webpage</a></li>
+				<li><a href="">Web Development Skills</a></li>
+				<li><a href="">10 Ways to be Smart</a></li>
+			</ul>
+			<h3>Categories</h3>
+			<ul>
+				<li><a href="">Technology</a></li>
+				<li><a href="">Web Development</a></li>
+				<li><a href="">Artificial Intelligence</a></li>
+			</ul>
+			<!-- The sidebar content ends here -->
+		</aside>
+	</main>
+	<!-- Main content ends here -->
+
+	<footer>
+		<!-- The footer content begins here -->
+		<p>Copyright &copy 2025 - Software Development by Amos Goma.</p>
+		<!-- The footer content ends here -->
+	</footer>
+
+	<!-- End of The body content -->
+</body>
+</html>
